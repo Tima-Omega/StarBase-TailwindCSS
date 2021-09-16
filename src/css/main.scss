@@ -1,3 +1,15 @@
+.head-bg {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	z-index: -1;
+	width: 15%;
+	@media (max-width: 1770px) {
+		top: -90px;
+		left: -50px;
+	}
+}
+
 .build {
     .scrollbar {
         width: 210px;
@@ -144,7 +156,7 @@
 		left: 150px;
 	}
 	@media (max-width: 1500px) {
-		left: 7%;
+		left: 8%;
 	}
 	@media (max-width: 1300px) {
 		left: 4.5%;
@@ -165,7 +177,7 @@
 		left: 148px;
 	}
 	@media (max-width: 1500px) {
-		left: calc(7% - 2px);
+		left: calc(8% - 2px);
 	}
 	@media (max-width: 1300px) {
 		left: calc(4.5% - 2px);
@@ -551,5 +563,15 @@
 		bottom: 39%;
 	}
 }
+
+// .foot-bg {
+// 	position: absolute;
+// 	// top: 50%;
+// 	bottom: 0;
+// 	right: 0;
+// 	// transform: translateY(-50%);
+// 	z-index: -1;
+// 	width: 50%;
+// }
 
 
