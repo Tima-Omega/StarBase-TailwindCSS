@@ -166,6 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
     timerId = setInterval(countdownTimer, 1000);
 
     const swiper = new Swiper('.build', {
+		allowTouchMove: true,
+		breakpoints: {
+			992: {
+				allowTouchMove: false,
+			}
+		},
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',

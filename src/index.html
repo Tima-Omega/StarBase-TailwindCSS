@@ -114,7 +114,7 @@
 			</div>
 		</div>
 		<img src="img/bg-1.png" alt="" class="absolute top-0 right-0 -z-1 w-55">
-		<img src="img/bg-2.png" alt="" class="absolute top-0 left-0 -z-1 w-15">
+		<img src="img/bg-2.png" alt="" class="absolute top-0 left-0 -z-1 w-15 2xl:block hidden">
 	</header>
 	<div class="scroll-indicator" id="section01" data-scroll-indicator-title="01"></div>
     <div class="pt-7 relative">
@@ -133,7 +133,8 @@
 					<button class="bg-main-blue w-52 h-16 mx-auto md:mx-0 flex items-center justify-center rounded-10 shadow-sec text-white text-13 outline-none focus:outline-none transition-all duration-200 hover:bg-main">Выбрать персонажа</button>
 					<img src="img/starbase.svg" alt="" class="relative -top-4 -z-1 opacity-60">
 				</div>
-				<img src="img/human.png" alt="" class="hidden md:block absolute 2xl:right-64 right-0 -top-6 z-0">
+				<img src="img/human2.png" alt="" class="hidden md:block absolute 2xl:right-72 right-10 -top-6 z-0">
+				<img src="img/round2.svg" alt="" class="hidden md:block absolute 2xl:right-64 right-0 -top-6 -z-1">
 			</div>
 			<div class="flex gap-y-4 gap-x-6 z-20 relative flex-col md:flex-row">
 				<div class="rounded-3xl bg-white border border-border shadow-third w-full md:w-1/3 h-40  flex flex-col items-center justify-center relative">
@@ -795,7 +796,8 @@
 				<div class="text-main-text text-sm mb-8 leading-6">— это космическая база, где живут герои-астронавты в уникальной форме и с неповторимым характером. Это бесконечно красивый и захватывающий мир, с первого взгляда покоряющий сердца. Здесь нет двух одинаковых персонажей, а совсем скоро коллекцию дополнят ракеты, спутники космические корабли и МКС. Присоединяйтесь, пока есть места — приключение начинается.</div>
 				<button class="bg-main-blue w-52 h-16 mx-auto md:mx-0 flex items-center justify-center rounded-10 shadow-sec text-white font-medium text-13 outline-none focus:outline-none transition-all duration-200 hover:bg-main">Присоединиться</button>
 			</div>
-			<img src="img/human-2.png" alt="" class="absolute w-1/2 lg:w-auto right-0 lg:-top-20 top-1/2 lg:transform-none transform -translate-y-1/2 md:block hidden">
+			<img src="img/human2.png" alt="" class="absolute w-1/3 lg:w-auto right-44 lg:right-64 lg:-top-8 top-1/2 lg:transform-none transform -translate-y-1/2 md:block hidden z-10">
+			<img src="img/jupiter.png" alt="" class="absolute w-1/2 lg:w-auto right-0 lg:-top-20 top-1/2 lg:transform-none transform -translate-y-1/2 md:block hidden z-0">
 		</div>
 		<img src="img/dust-2.png" alt="" class="absolute left-0 -top-80 -z-1">
 		<img src="img/starbase-vert.svg" alt="" class="absolute right-4 md:right-20 bottom-0 -z-1 w-16 md:w-auto">
@@ -830,17 +832,19 @@
 		<img src="img/sky-13.svg" alt="" class="dot dot--twelve">
 		<img src="img/sky-14.svg" alt="" class="dot dot--thirteen">
 		
-		<div class="container">
-			<div class="swiper build pt-28">
+		<div class="container relative">
+			<div class="absolute top-20 left-1/2 transform -translate-x-1/2 z-50 sm:w-full w-3/4">
+				<div class="text-center font-medium text-26 mb-5 leading-9">Строим <span class="font-bold text-main">StarBase</span> 
+					<br> для вас и вместе с вами</div>
+				<div class="flex justify-center">
+					<div class="rounded-10 w-8 h-xs bg-main-purple mr-1 shadow-fourth"></div>
+					<div class="rounded-10 w-s h-xs bg-main-purple mr-1 shadow-fourth"></div>
+				</div>
+			</div>
+			<div class="swiper build sm:pt-28 pt-32">
 				<div class="swiper-wrapper mb-5">
 					<div class="swiper-slide">
-						<div class="text-center font-medium text-26 mb-5 leading-9">Строим <span class="font-bold text-main">StarBase</span> 
-							<br> для вас и вместе с вами</div>
-						<div class="flex mb-8 justify-center">
-							<div class="rounded-10 w-8 h-xs bg-main-purple mr-1 shadow-fourth"></div>
-							<div class="rounded-10 w-s h-xs bg-main-purple mr-1 shadow-fourth"></div>
-						</div>
-						<div class="flex justify-center 2xl:-mr-80">
+						<div class="flex justify-center 2xl:-mr-80 pt-24">
 							<div class="flex flex-col items-center sm:-mr-20">
 								<div class="rounded-full w-20 h-20 flex items-center justify-center relative shadow-fourth bg-main-grad mb-5">
 									<div class="absolute -top-1 -left-1 rounded-full w-7 h-7 flex items-center justify-center bg-white font-semibold text-xs text-black">05</div>
@@ -849,19 +853,17 @@
 								<div class="font-bold text-xs uppercase text-main mb-2">в разработке</div>
 								<div class="w-64 text-center text-sm leading-5">Публикация принятых 10000 астронавтов StarBase</div>
 							</div>
-							<img src="img/ship.svg" alt="" class="md:w-64 mb-auto mt-7 w-40 sm:block hidden">
+							<!-- <img src="img/ship.svg" alt="" class="md:w-64 mb-auto mt-7 w-40 sm:block hidden"> -->
+							<div class="md:w-64 mb-auto -mt-10 w-40 sm:block hidden relative">
+								<img src="img/ship.svg" alt="">
+								<img src="img/rocket.svg" alt="" class="absolute top-14 right-1/2">
+							</div>
 							<img src="img/iss.png" alt="" class="2xl:-mt-56 xl:-mt-28 mt-0 xl:w-auto w-1/3 sm:block hidden">
 						</div>
 						
 					</div>
 					<div class="swiper-slide">
-						<div class="text-center font-medium text-26 mb-5 leading-9">ТЕСТ<span class="font-bold text-main">StarBase</span> 
-							<br> для вас и вместе с вами</div>
-						<div class="flex mb-8 justify-center">
-							<div class="rounded-10 w-8 h-xs bg-main-purple mr-1 shadow-fourth"></div>
-							<div class="rounded-10 w-s h-xs bg-main-purple mr-1 shadow-fourth"></div>
-						</div>
-						<div class="flex justify-center 2xl:-mr-80">
+						<div class="flex justify-center 2xl:-mr-80 pt-24">
 							<div class="flex flex-col items-center sm:-mr-20">
 								<div class="rounded-full w-20 h-20 flex items-center justify-center relative shadow-fourth bg-main-grad mb-5">
 									<div class="absolute -top-1 -left-1 rounded-full w-7 h-7 flex items-center justify-center bg-white font-semibold text-xs text-black">05</div>
@@ -895,8 +897,9 @@
 		
 		<div class="container 2xl:px-28">
 			<div class="flex justify-center gap-x-8 lg:gap-x-28 md:flex-row flex-col md:items-start items-center">
-				<div class="xs:w-1/2 w-3/4">
-					<img src="img/bg-7.png" alt="" class="">
+				<div class="xs:w-1/2 w-3/4 relative">
+					<img src="img/bg7.png" alt="" class="">
+					<img src="img/starbase-s.svg" alt="" class="under">
 				</div>
 				<div class="md:w-1/2 w-full">
 					<div class="font-medium text-26 text-black mb-5">Идеально для всех пользователей <br> <span class="font-bold text-main">Solana</span></div>
@@ -962,7 +965,56 @@
 				<div class="rounded-10 w-8 h-xs bg-main-purple mr-1 shadow-fourth"></div>
 				<div class="rounded-10 w-s h-xs bg-main-purple mr-1 shadow-fourth"></div>
 			</div>
-			<div class="flex gap-x-16 md:flex-row flex-col">
+			<div class="md:grid flex xl:gap-x-16 gap-x-6 gap-y-6 grid-cols-2 md:flex-row flex-col">
+				
+					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third md:order-none order-1">
+						<div class="font-medium mb-3">За какую валюту покупают NFT в Starbase?</div>
+						<div class="font-medium text-sm text-black text-opacity-50">Ethereum.</div>
+						<div class="absolute w-12 h-12 flex items-center justify-center bg-main-grad shadow-fourth rounded-full font-semibold text-white -top-4 -left-3">01.</div>
+					</div>
+					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third md:order-none order-4">
+						<div class="font-medium mb-3">Возможно ли забронировать NFT еще до открытия продаж? </div>
+						<div class="font-medium text-sm text-black text-opacity-50">Да, выберите понравившегося героя в каталоге и нажмите «Купить». .</div>
+						<div class="absolute w-12 h-12 flex items-center justify-center bg-main-grad shadow-fourth rounded-full font-semibold text-white -top-4 -left-3">04.</div>
+					</div>
+					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third md:mb-11 md:order-none order-2">
+						<div class="font-medium mb-3">Сколько уникальных признаков у героев? </div>
+						<div class="font-medium text-sm text-black text-opacity-50">Свыше 100, включая разные детали униформы, аксессуары, внешность и фон. .</div>
+						<div class="absolute w-12 h-12 flex items-center justify-center bg-main-grad shadow-fourth rounded-full font-semibold text-white -top-4 -left-3">02.</div>
+					</div>
+					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third md:mt-11 md:order-none order-5">
+						<div class="font-medium mb-3">Смогу ли я перепродать NFT?</div>
+						<div class="font-medium text-sm text-black text-opacity-50">Да, если захотите — по более высокой стоимости. По прогнозам рост цены составит до 550%..</div>
+						<div class="absolute w-12 h-12 flex items-center justify-center bg-main-grad shadow-fourth rounded-full font-semibold text-white -top-4 -left-3">05.</div>
+					</div>
+					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third md:order-none order-3">
+						<div class="font-medium mb-3">Смогу ли я перепродать NFT?</div>
+						<div class="font-medium text-sm text-black text-opacity-50">Да, NFT подтвердит ваши права..</div>
+						<div class="absolute w-12 h-12 flex items-center justify-center bg-main-grad shadow-fourth rounded-full font-semibold text-white -top-4 -left-3">03.</div>
+					</div>
+					<div class="flex items-center justify-between sm:flex-row flex-col md:order-none order-6">
+						<div class="mb-5 sm:mb-0">
+							<div class="font-semibold text-lg text-main text-center sm:text-left">Остались вопросы?</div>
+							<div class="font-semibold  text-base text-black">Задайте их в социальных сетях</div>
+						</div>
+						<div class="flex rounded-10 shadow-first w-56 h-12 overflow-hidden">
+							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
+								<img src="img/tg-2.svg" alt="">
+							</a>
+							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
+								<img src="img/dis-2.svg" alt="">
+							</a>
+							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
+								<img src="img/fb.svg" alt="">
+							</a>
+							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
+								<img src="img/inst.svg" alt="">
+							</a>
+						</div>
+					</div>
+				
+			</div>
+			<!-- <div class="flex gap-x-16 md:flex-row flex-col">
 				<div class="md:w-1/2 w-full">
 					<div class="w-full pt-6 pb-7 pl-14 pr-5 relative bg-white border border-border rounded-3xl shadow-third mb-11">
 						<div class="font-medium mb-3">За какую валюту покупают NFT в Starbase?</div>
@@ -998,55 +1050,21 @@
 						</div>
 						<div class="flex rounded-10 shadow-first w-56 h-12 overflow-hidden">
 							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-								<svg class="fill-current text-white" width="13" height="12" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
-									<path d="M10.4655 11.3667C10.364 11.3667 10.2631 11.339 10.1766 11.2849L6.90789 9.23816L5.15473 10.4026C5.01723 10.4939 4.84001 10.5169 4.68035 10.4642C4.5209 10.4114 4.3998 10.2894 4.35657 10.1383L3.47629 7.05886L0.33094 5.94868C0.132928 5.87876 0.0016054 5.7039 0.000164561 5.5082C-0.00127628 5.3125 0.127439 5.13599 0.32449 5.0636L12.2843 0.67078C12.3385 0.6495 12.396 0.637213 12.4539 0.63392C12.4746 0.63278 12.4954 0.63278 12.516 0.633856C12.636 0.640443 12.7538 0.685537 12.8457 0.768757C12.8553 0.77737 12.8643 0.786174 12.8729 0.795357C12.949 0.875664 12.9909 0.973578 12.9988 1.07333C13.0007 1.09841 13.0006 1.1238 12.9982 1.1492C12.9965 1.16731 12.9937 1.18537 12.9897 1.20329L10.971 10.9807C10.9385 11.1377 10.8227 11.2692 10.6627 11.3305C10.5992 11.3548 10.5322 11.3667 10.4655 11.3667ZM7.19489 8.26992L10.1065 10.093L11.6773 2.4851L6.00407 7.52429L7.18117 8.26137C7.1859 8.26409 7.19043 8.26701 7.19489 8.26992ZM4.77106 7.86452L5.1609 9.22809L6.00084 8.67019L4.90101 7.9815C4.84989 7.94958 4.80612 7.90981 4.77106 7.86452ZM1.93061 5.4961L4.09036 6.25832C4.24508 6.31291 4.36186 6.43299 4.40412 6.58081L4.67802 7.53899C4.69057 7.42847 4.74485 7.32448 4.83301 7.24613L10.2388 2.44456L1.93061 5.4961Z"/>
-									</svg>
+								<img src="img/tg-2.svg" alt="">
 							</a>
 							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-								
-								<svg class="fill-current text-white" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0)">
-									<path d="M6.50847 7.14185C5.4676 7.14185 4.62076 8.07479 4.62076 9.22151C4.62076 10.3682 5.4676 11.3012 6.50847 11.3012C7.54938 11.3012 8.39626 10.3682 8.39626 9.22151C8.39626 8.07479 7.54938 7.14185 6.50847 7.14185ZM6.50847 10.2465C6.04916 10.2465 5.67545 9.78669 5.67545 9.22151C5.67545 8.65634 6.04916 8.19653 6.50847 8.19653C6.96782 8.19653 7.34157 8.65634 7.34157 9.22151C7.34157 9.78669 6.96782 10.2465 6.50847 10.2465Z"/>
-									<path d="M11.4917 7.14185C10.4508 7.14185 9.60388 8.07479 9.60388 9.22151C9.60388 10.3682 10.4508 11.3012 11.4917 11.3012C12.5325 11.3012 13.3794 10.3682 13.3794 9.22151C13.3794 8.07479 12.5325 7.14185 11.4917 7.14185ZM11.4917 10.2465C11.0323 10.2465 10.6586 9.78669 10.6586 9.22151C10.6586 8.65634 11.0323 8.19653 11.4917 8.19653C11.951 8.19653 12.3247 8.65634 12.3247 9.22151C12.3247 9.78669 11.951 10.2465 11.4917 10.2465Z"/>
-									<path d="M17.9993 12.7469C17.9868 12.524 17.6715 7.24998 15.6687 4.09509C15.6278 4.03058 15.5733 3.9757 15.509 3.93436C13.0326 2.33971 11.3458 2.34428 11.2752 2.34399C11.0707 2.3467 10.8945 2.46567 10.8094 2.63758L9.95864 4.26792C9.64174 4.24718 9.32178 4.23642 9.0001 4.23642C8.67849 4.23642 8.3585 4.24718 8.0416 4.26792L7.19181 2.63948C7.10704 2.46658 6.93031 2.34674 6.72497 2.34403C6.65399 2.34361 4.96736 2.33988 2.49124 3.93439C2.42701 3.97577 2.37248 4.03062 2.33153 4.09513C0.328745 7.24998 0.0133578 12.524 0.000912472 12.7469C-0.00689221 12.8867 0.0412015 13.0239 0.134612 13.1282C0.227494 13.2318 2.43387 15.6562 5.48356 15.6562C5.4972 15.6562 5.51123 15.6562 5.52491 15.6561C5.68518 15.6549 5.83618 15.581 5.93536 15.4551L7.34206 13.6699C7.88234 13.7316 8.43729 13.7638 9.0001 13.7638C9.56295 13.7638 10.1179 13.7316 10.6581 13.6699L12.0648 15.4551C12.164 15.581 12.315 15.6549 12.4753 15.6561C12.4892 15.6562 12.5028 15.6562 12.5166 15.6562C15.5661 15.6562 17.7728 13.2318 17.8656 13.1282C17.959 13.0239 18.0071 12.8867 17.9993 12.7469ZM12.7311 14.5966L11.8517 13.4804C13.1904 13.205 14.392 12.7364 15.3299 12.1071C15.5718 11.9449 15.6363 11.6173 15.4741 11.3754C15.3118 11.1335 14.9841 11.0689 14.7423 11.2313C13.3425 12.1705 11.2495 12.7091 9.0001 12.7091C6.7508 12.7091 4.65781 12.1705 3.25786 11.2314C3.01595 11.0691 2.6884 11.1337 2.52615 11.3756C2.3639 11.6174 2.42845 11.945 2.67033 12.1073C3.60829 12.7364 4.80986 13.2051 6.14858 13.4805L5.26915 14.5965C3.20431 14.5007 1.56111 13.0568 1.07044 12.5776C1.15235 11.5558 1.57739 7.34149 3.16093 4.75817C4.71593 3.77661 5.88941 3.50362 6.41352 3.42776L6.91386 4.3865C5.7375 4.55828 4.63538 4.87394 3.69661 5.31593C3.43311 5.43996 3.32008 5.75415 3.44411 6.01768C3.56818 6.28114 3.88237 6.39413 4.14583 6.27017C5.4869 5.6388 7.21086 5.29111 9.0001 5.29111C10.7894 5.29111 12.5134 5.63887 13.8544 6.27031C13.927 6.30449 14.0034 6.32069 14.0787 6.32069C14.2766 6.32069 14.4663 6.20872 14.5562 6.01786C14.6802 5.7544 14.5672 5.44017 14.3037 5.3161C13.3649 4.87408 12.2628 4.55835 11.0863 4.38657L11.5867 3.42783C12.1107 3.50369 13.2842 3.77668 14.8393 4.75824C16.4211 7.33885 16.8475 11.5575 16.9297 12.5785C16.4403 13.0587 14.8044 14.5015 12.7311 14.5966Z"/>
-									</g>
-									<defs>
-									<clipPath id="clip0">
-									<rect width="18" height="18" fill="white" transform="translate(0.00012207)"/>
-									</clipPath>
-									</defs>
-								</svg>
+								<img src="img/dis-2.svg" alt="">
 							</a>
 							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-								<svg class="fill-current text-white" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0)">
-									<path d="M9.91519 16.0001V8.89231H12.3L12.6578 6.12147H9.91519V4.35268C9.91519 3.55071 10.137 3.00418 11.2883 3.00418L12.7543 3.00357V0.525231C12.5008 0.492285 11.6305 0.416748 10.6176 0.416748C8.50249 0.416748 7.05444 1.7078 7.05444 4.07826V6.12147H4.66238V8.89231H7.05444V16.0001H9.91519Z"/>
-									</g>
-									<defs>
-									<clipPath id="clip0">
-									<rect width="15.5833" height="15.5833" transform="translate(0.916687 0.416748)"/>
-									</clipPath>
-									</defs>
-								</svg>
+								<img src="img/fb.svg" alt="">
 							</a>
 							<a href="" class="h-full w-1/4 flex items-center justify-center cursor-pointer bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-								<svg class="fill-current text-white" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<g clip-path="url(#clip0)">
-									<path d="M11.7667 0.786133H5.74588C2.97529 0.786133 0.728516 3.03291 0.728516 5.80349V11.8243C0.728516 14.5949 2.97529 16.8417 5.74588 16.8417H11.7667C14.5373 16.8417 16.7841 14.5949 16.7841 11.8243V5.80349C16.7841 3.03291 14.5373 0.786133 11.7667 0.786133ZM15.2789 11.8243C15.2789 13.761 13.7034 15.3365 11.7667 15.3365H5.74588C3.80918 15.3365 2.23372 13.761 2.23372 11.8243V5.80349C2.23372 3.86679 3.80918 2.29134 5.74588 2.29134H11.7667C13.7034 2.29134 15.2789 3.86679 15.2789 5.80349V11.8243Z"/>
-									<path d="M8.6275 4.49243C6.28044 4.49243 4.3775 6.39537 4.3775 8.74243C4.3775 11.0895 6.28044 12.9924 8.6275 12.9924C10.9746 12.9924 12.8775 11.0895 12.8775 8.74243C12.8775 6.39537 10.9746 4.49243 8.6275 4.49243ZM8.6275 11.3987C7.16338 11.3987 5.97125 10.2066 5.97125 8.74243C5.97125 7.27724 7.16338 6.08618 8.6275 6.08618C10.0916 6.08618 11.2838 7.27724 11.2838 8.74243C11.2838 10.2066 10.0916 11.3987 8.6275 11.3987Z"/>
-									<path d="M13.1963 4.74004C13.509 4.74004 13.7626 4.4865 13.7626 4.17373C13.7626 3.86097 13.509 3.60742 13.1963 3.60742C12.8835 3.60742 12.6299 3.86097 12.6299 4.17373C12.6299 4.4865 12.8835 4.74004 13.1963 4.74004Z"/>
-									</g>
-									<defs>
-									<clipPath id="clip0">
-									<rect width="17" height="17" transform="translate(0.127502 0.242432)"/>
-									</clipPath>
-									</defs>
-								</svg>
+								<img src="img/inst.svg" alt="">
 							</a>
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<img src="img/bg-3.png" alt="" class="absolute left-0 top-0 -z-1 lg:block hidden">
 	</div>
@@ -1102,74 +1120,22 @@
 				</nav>
 				<div class="flex rounded-10 shadow-first w-56 h-9 overflow-hidden xl:mt-0 mt-5 2xl:mx-0 mx-auto">
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						<svg class="fill-current text-footer-fill" width="13" height="12" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
-							<path d="M10.4655 11.3667C10.364 11.3667 10.2631 11.339 10.1766 11.2849L6.90789 9.23816L5.15473 10.4026C5.01723 10.4939 4.84001 10.5169 4.68035 10.4642C4.5209 10.4114 4.3998 10.2894 4.35657 10.1383L3.47629 7.05886L0.33094 5.94868C0.132928 5.87876 0.0016054 5.7039 0.000164561 5.5082C-0.00127628 5.3125 0.127439 5.13599 0.32449 5.0636L12.2843 0.67078C12.3385 0.6495 12.396 0.637213 12.4539 0.63392C12.4746 0.63278 12.4954 0.63278 12.516 0.633856C12.636 0.640443 12.7538 0.685537 12.8457 0.768757C12.8553 0.77737 12.8643 0.786174 12.8729 0.795357C12.949 0.875664 12.9909 0.973578 12.9988 1.07333C13.0007 1.09841 13.0006 1.1238 12.9982 1.1492C12.9965 1.16731 12.9937 1.18537 12.9897 1.20329L10.971 10.9807C10.9385 11.1377 10.8227 11.2692 10.6627 11.3305C10.5992 11.3548 10.5322 11.3667 10.4655 11.3667ZM7.19489 8.26992L10.1065 10.093L11.6773 2.4851L6.00407 7.52429L7.18117 8.26137C7.1859 8.26409 7.19043 8.26701 7.19489 8.26992ZM4.77106 7.86452L5.1609 9.22809L6.00084 8.67019L4.90101 7.9815C4.84989 7.94958 4.80612 7.90981 4.77106 7.86452ZM1.93061 5.4961L4.09036 6.25832C4.24508 6.31291 4.36186 6.43299 4.40412 6.58081L4.67802 7.53899C4.69057 7.42847 4.74485 7.32448 4.83301 7.24613L10.2388 2.44456L1.93061 5.4961Z"/>
-							</svg>
+						<img src="img/tg.svg" alt="">
 					</a>
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						
-						<svg class="fill-current text-footer-fill" width="15" height="15" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M6.50847 7.14185C5.4676 7.14185 4.62076 8.07479 4.62076 9.22151C4.62076 10.3682 5.4676 11.3012 6.50847 11.3012C7.54938 11.3012 8.39626 10.3682 8.39626 9.22151C8.39626 8.07479 7.54938 7.14185 6.50847 7.14185ZM6.50847 10.2465C6.04916 10.2465 5.67545 9.78669 5.67545 9.22151C5.67545 8.65634 6.04916 8.19653 6.50847 8.19653C6.96782 8.19653 7.34157 8.65634 7.34157 9.22151C7.34157 9.78669 6.96782 10.2465 6.50847 10.2465Z"/>
-							<path d="M11.4917 7.14185C10.4508 7.14185 9.60388 8.07479 9.60388 9.22151C9.60388 10.3682 10.4508 11.3012 11.4917 11.3012C12.5325 11.3012 13.3794 10.3682 13.3794 9.22151C13.3794 8.07479 12.5325 7.14185 11.4917 7.14185ZM11.4917 10.2465C11.0323 10.2465 10.6586 9.78669 10.6586 9.22151C10.6586 8.65634 11.0323 8.19653 11.4917 8.19653C11.951 8.19653 12.3247 8.65634 12.3247 9.22151C12.3247 9.78669 11.951 10.2465 11.4917 10.2465Z"/>
-							<path d="M17.9993 12.7469C17.9868 12.524 17.6715 7.24998 15.6687 4.09509C15.6278 4.03058 15.5733 3.9757 15.509 3.93436C13.0326 2.33971 11.3458 2.34428 11.2752 2.34399C11.0707 2.3467 10.8945 2.46567 10.8094 2.63758L9.95864 4.26792C9.64174 4.24718 9.32178 4.23642 9.0001 4.23642C8.67849 4.23642 8.3585 4.24718 8.0416 4.26792L7.19181 2.63948C7.10704 2.46658 6.93031 2.34674 6.72497 2.34403C6.65399 2.34361 4.96736 2.33988 2.49124 3.93439C2.42701 3.97577 2.37248 4.03062 2.33153 4.09513C0.328745 7.24998 0.0133578 12.524 0.000912472 12.7469C-0.00689221 12.8867 0.0412015 13.0239 0.134612 13.1282C0.227494 13.2318 2.43387 15.6562 5.48356 15.6562C5.4972 15.6562 5.51123 15.6562 5.52491 15.6561C5.68518 15.6549 5.83618 15.581 5.93536 15.4551L7.34206 13.6699C7.88234 13.7316 8.43729 13.7638 9.0001 13.7638C9.56295 13.7638 10.1179 13.7316 10.6581 13.6699L12.0648 15.4551C12.164 15.581 12.315 15.6549 12.4753 15.6561C12.4892 15.6562 12.5028 15.6562 12.5166 15.6562C15.5661 15.6562 17.7728 13.2318 17.8656 13.1282C17.959 13.0239 18.0071 12.8867 17.9993 12.7469ZM12.7311 14.5966L11.8517 13.4804C13.1904 13.205 14.392 12.7364 15.3299 12.1071C15.5718 11.9449 15.6363 11.6173 15.4741 11.3754C15.3118 11.1335 14.9841 11.0689 14.7423 11.2313C13.3425 12.1705 11.2495 12.7091 9.0001 12.7091C6.7508 12.7091 4.65781 12.1705 3.25786 11.2314C3.01595 11.0691 2.6884 11.1337 2.52615 11.3756C2.3639 11.6174 2.42845 11.945 2.67033 12.1073C3.60829 12.7364 4.80986 13.2051 6.14858 13.4805L5.26915 14.5965C3.20431 14.5007 1.56111 13.0568 1.07044 12.5776C1.15235 11.5558 1.57739 7.34149 3.16093 4.75817C4.71593 3.77661 5.88941 3.50362 6.41352 3.42776L6.91386 4.3865C5.7375 4.55828 4.63538 4.87394 3.69661 5.31593C3.43311 5.43996 3.32008 5.75415 3.44411 6.01768C3.56818 6.28114 3.88237 6.39413 4.14583 6.27017C5.4869 5.6388 7.21086 5.29111 9.0001 5.29111C10.7894 5.29111 12.5134 5.63887 13.8544 6.27031C13.927 6.30449 14.0034 6.32069 14.0787 6.32069C14.2766 6.32069 14.4663 6.20872 14.5562 6.01786C14.6802 5.7544 14.5672 5.44017 14.3037 5.3161C13.3649 4.87408 12.2628 4.55835 11.0863 4.38657L11.5867 3.42783C12.1107 3.50369 13.2842 3.77668 14.8393 4.75824C16.4211 7.33885 16.8475 11.5575 16.9297 12.5785C16.4403 13.0587 14.8044 14.5015 12.7311 14.5966Z"/>
-							</g>
-							<defs>
-							<clipPath id="clip0">
-							<rect width="18" height="18" fill="white" transform="translate(0.00012207)"/>
-							</clipPath>
-							</defs>
-						</svg>
+						<img src="img/dis.svg" alt="">
 					</a>
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						<svg class="fill-current text-footer-fill" width="11" height="11" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M9.91519 16.0001V8.89231H12.3L12.6578 6.12147H9.91519V4.35268C9.91519 3.55071 10.137 3.00418 11.2883 3.00418L12.7543 3.00357V0.525231C12.5008 0.492285 11.6305 0.416748 10.6176 0.416748C8.50249 0.416748 7.05444 1.7078 7.05444 4.07826V6.12147H4.66238V8.89231H7.05444V16.0001H9.91519Z"/>
-							</g>
-							<defs>
-							<clipPath id="clip0">
-							<rect width="15.5833" height="15.5833" transform="translate(0.916687 0.416748)"/>
-							</clipPath>
-							</defs>
-						</svg>
+						<img src="img/fb-2.svg" alt="">
 					</a>
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						<svg class="fill-current text-footer-fill" width="12" height="12" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M11.7667 0.786133H5.74588C2.97529 0.786133 0.728516 3.03291 0.728516 5.80349V11.8243C0.728516 14.5949 2.97529 16.8417 5.74588 16.8417H11.7667C14.5373 16.8417 16.7841 14.5949 16.7841 11.8243V5.80349C16.7841 3.03291 14.5373 0.786133 11.7667 0.786133ZM15.2789 11.8243C15.2789 13.761 13.7034 15.3365 11.7667 15.3365H5.74588C3.80918 15.3365 2.23372 13.761 2.23372 11.8243V5.80349C2.23372 3.86679 3.80918 2.29134 5.74588 2.29134H11.7667C13.7034 2.29134 15.2789 3.86679 15.2789 5.80349V11.8243Z"/>
-							<path d="M8.6275 4.49243C6.28044 4.49243 4.3775 6.39537 4.3775 8.74243C4.3775 11.0895 6.28044 12.9924 8.6275 12.9924C10.9746 12.9924 12.8775 11.0895 12.8775 8.74243C12.8775 6.39537 10.9746 4.49243 8.6275 4.49243ZM8.6275 11.3987C7.16338 11.3987 5.97125 10.2066 5.97125 8.74243C5.97125 7.27724 7.16338 6.08618 8.6275 6.08618C10.0916 6.08618 11.2838 7.27724 11.2838 8.74243C11.2838 10.2066 10.0916 11.3987 8.6275 11.3987Z"/>
-							<path d="M13.1963 4.74004C13.509 4.74004 13.7626 4.4865 13.7626 4.17373C13.7626 3.86097 13.509 3.60742 13.1963 3.60742C12.8835 3.60742 12.6299 3.86097 12.6299 4.17373C12.6299 4.4865 12.8835 4.74004 13.1963 4.74004Z"/>
-							</g>
-							<defs>
-							<clipPath id="clip0">
-							<rect width="17" height="17" transform="translate(0.127502 0.242432)"/>
-							</clipPath>
-							</defs>
-						</svg>
+						<img src="img/inst-2.svg" alt="">
 					</a>
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer border-r border-white border-opacity-10 bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M14.2396 2.92605C14.2375 2.92523 14.2354 2.92424 14.2334 2.92364L10.6396 1.88624C9.98788 1.63548 9.2412 1.87427 8.85672 2.45942C8.85429 2.46314 8.85191 2.46689 8.84959 2.47066L6.95704 5.56537L5.88118 3.71018C5.8809 3.70972 5.88049 3.70936 5.88022 3.7089C5.84183 3.64327 5.78539 3.58828 5.71536 3.55194L2.70949 1.99108C2.24301 1.7489 1.69638 1.76719 1.24718 2.04011C0.797973 2.31297 0.529785 2.78971 0.529785 3.31528V9.9818C0.529785 10.5537 0.848312 11.0663 1.36109 11.3196L3.78366 12.5162C3.99418 12.6202 4.22015 12.6718 4.44536 12.6718C4.71836 12.6718 4.99021 12.596 5.23198 12.4457C5.67314 12.1716 5.93655 11.6978 5.93655 11.1784V10.2312L9.55229 11.4762L12.5519 12.5091C12.7135 12.5647 12.8788 12.5921 13.0425 12.5921C13.3468 12.5921 13.6457 12.4974 13.9042 12.313C14.3018 12.0294 14.5298 11.5867 14.5298 11.0983V3.31829C14.5298 3.1335 14.4076 2.97734 14.2396 2.92605ZM9.54557 2.90496C9.72147 2.64224 10.0606 2.53735 10.3544 2.65551C10.3673 2.66067 10.3804 2.66519 10.3937 2.66904L13.5051 3.56717L9.68297 10.2658L7.42509 6.37242L9.54557 2.90496ZM5.11621 11.1784C5.11621 11.4158 5.00057 11.6237 4.79899 11.749C4.59736 11.8743 4.35971 11.8858 4.14693 11.7807L1.72438 10.5841C1.49352 10.4701 1.3501 10.2393 1.3501 9.9818V3.31528C1.3501 3.07512 1.46781 2.86583 1.67308 2.74115C1.78227 2.67481 1.90129 2.64148 2.02087 2.64148C2.12606 2.64148 2.23169 2.66726 2.33146 2.71908L5.11623 4.1651V11.1784H5.11621ZM5.93652 9.36364V5.44082L6.59187 6.57089C6.5925 6.57201 6.59315 6.5731 6.59381 6.57422L8.77907 10.3424L5.93652 9.36364ZM13.4278 11.6452C13.2488 11.7729 13.0269 11.8051 12.819 11.7335L10.2873 10.8618L13.7095 4.86417V11.0983C13.7095 11.3182 13.6068 11.5175 13.4278 11.6452Z" fill="#D1C1EC"/>
-							</g>
-							<defs>
-							<clipPath id="clip0">
-							<rect width="14" height="14" fill="white" transform="translate(0.529785 0.229492)"/>
-							</clipPath>
-							</defs>
-							</svg>
+						<img src="img/medium.svg" alt="">
 					</a>
 					<a href="" class="h-full w-1/6 flex items-center justify-center cursor-pointer bg-sec-grad transition-all duration-200 hover:bg-opacity-50">
-						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<g clip-path="url(#clip0)">
-							<path d="M11.9874 3.14901L11.981 3.12402C12.5317 2.79384 12.9764 2.24953 13.1743 1.62598C12.6584 1.93294 12.0547 2.16572 11.4478 2.28613C10.961 1.76751 10.3115 1.44824 9.54346 1.44824C8.0715 1.44824 6.85206 2.64001 6.85206 4.11425C6.85206 4.34018 6.87071 4.55898 6.8956 4.7506C5.59949 4.64993 4.38154 4.2294 3.26773 3.49664C2.29515 2.85692 1.77087 2.20569 1.76641 2.20014C1.62359 2.01913 1.37672 1.95695 1.16537 2.04889C0.953911 2.14083 0.830925 2.36359 0.865738 2.59141C0.877838 2.67006 1.12579 4.22464 2.06276 5.57916C1.84437 5.54514 1.71404 5.48444 1.68905 5.47204C1.50774 5.36463 1.28548 5.38437 1.12054 5.51588C0.954605 5.64819 0.895294 5.87363 0.961449 6.07527C0.982872 6.14073 1.4285 7.44011 3.05558 8.12872C2.70695 8.22929 2.3977 8.22761 2.39374 8.22761C2.39026 8.22761 2.38679 8.22751 2.38332 8.22751C2.16839 8.22751 1.97628 8.36309 1.90457 8.56641C1.83157 8.77301 1.89951 9.00311 2.07288 9.1371C2.11206 9.16736 2.84045 9.72079 4.02419 10.0005C3.6101 10.2284 3.12133 10.3656 2.56155 10.4103C1.78684 10.4722 1.16378 10.3254 1.15872 10.3241C0.901146 10.261 0.638413 10.4066 0.555398 10.6585C0.472383 10.9103 0.597253 11.1836 0.841934 11.2859C0.91523 11.3164 2.65696 12.036 4.38928 12.036C5.59176 12.036 6.49243 11.9265 7.30939 11.6809C8.32888 11.3743 9.19444 10.8516 9.95527 10.0827C10.1525 9.88335 10.1509 9.5618 9.9515 9.36453C9.75204 9.16726 9.43059 9.16894 9.23332 9.3684C7.87661 10.7395 6.31559 11.0205 4.38928 11.0205C4.34415 11.0205 4.29902 11.0199 4.25379 11.0187C4.79116 10.772 5.25196 10.4202 5.61992 9.97122C5.74261 9.82146 5.76959 9.61506 5.68925 9.43882C5.60901 9.26267 5.43555 9.14752 5.24204 9.14177C4.71181 9.12619 4.24348 9.02463 3.85766 8.89857C4.1441 8.75307 4.4231 8.54638 4.64318 8.2529C4.74891 8.11196 4.774 7.92629 4.70953 7.76235C4.64507 7.5984 4.50016 7.47958 4.32679 7.44844C3.47422 7.2952 2.90799 6.95203 2.54072 6.61422C2.74682 6.60351 2.97326 6.57227 3.21754 6.51127C3.39666 6.46644 3.5374 6.32798 3.58501 6.14955C3.63262 5.97123 3.57975 5.78099 3.44675 5.65295C2.98645 5.20941 2.65191 4.65975 2.41258 4.14122C2.49609 4.20103 2.58317 4.26123 2.67363 4.32144C3.68171 4.99141 5.33944 5.79002 7.51232 5.79002C7.67031 5.79002 7.81928 5.71613 7.91529 5.59066C8.0114 5.4653 8.04353 5.30185 8.00247 5.14931C8.00108 5.14435 7.86778 4.64378 7.86778 4.11425C7.86778 3.67695 8.04225 3.26396 8.35913 2.95144C8.6778 2.63703 9.09843 2.46386 9.54356 2.46386C9.99355 2.46386 10.3851 2.63793 10.7074 2.98119C10.94 3.20019 11.1939 3.78417 11.1939 4.13666V4.44432C11.1939 4.45503 11.195 4.46961 11.1976 4.48687C11.1954 4.50631 11.1939 4.52595 11.1939 4.54589C11.1939 5.70026 10.9803 6.72798 10.5589 7.60038C10.4369 7.853 10.5428 8.15659 10.7953 8.27859C10.8666 8.31291 10.9417 8.32917 11.0158 8.32917C11.2047 8.32917 11.3859 8.22344 11.4734 8.04214C11.9619 7.03078 12.2096 5.85449 12.2096 4.54589C12.2096 4.52654 12.2082 4.5075 12.2061 4.48876C12.2085 4.4713 12.2096 4.45622 12.2096 4.44432V4.08886C12.7313 3.71206 13.173 3.20316 13.5299 2.66699C13.5298 2.66699 12.5937 3.11053 11.9874 3.14901Z" fill="#D1C1EC"/>
-							</g>
-							<defs>
-							<clipPath id="clip0">
-							<rect width="13" height="13" fill="white" transform="translate(0.529785 0.229492)"/>
-							</clipPath>
-							</defs>
-						</svg>
+						<img src="img/twitter.svg" alt="">
 					</a>
 				</div>
 			</div>

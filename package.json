@@ -29,9 +29,7 @@
     "build": "gulp prod",
     "prod": "gulp prod"
   },
-  "repository": {
-
-  },
+  "repository": {},
   "keywords": [
     "gulp",
     "gulp4",

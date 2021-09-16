@@ -5,7 +5,10 @@ module.exports = {
     theme: {
 		container: {
             center: true,
-            padding: '1rem'
+            padding: {
+				DEFAULT: '1rem',
+				'xl': '2rem'
+			}
         },
 		fontFamily: {
 			'Montserrat': ['Montserrat']
