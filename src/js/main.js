@@ -134,11 +134,11 @@ function scrollIndiClicked(t) {
 }
 
 easyScrollDots({
-	'fixedNav': false,
-	'fixedNavId': '',
-	'fixedNavUpward': false,
-	'offset': 0
-  });
+    'fixedNav': false,
+    'fixedNavId': '',
+    'fixedNavUpward': false,
+    'offset': 0,
+});
 
 document.addEventListener('DOMContentLoaded', () => {
     const deadline = new Date(2021, 08, 25);
@@ -166,12 +166,12 @@ document.addEventListener('DOMContentLoaded', () => {
     timerId = setInterval(countdownTimer, 1000);
 
     const swiper = new Swiper('.build', {
-		allowTouchMove: true,
-		breakpoints: {
-			992: {
-				allowTouchMove: false,
-			}
-		},
+        allowTouchMove: true,
+        breakpoints: {
+            992: {
+                allowTouchMove: false,
+            },
+        },
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -195,17 +195,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     swiperCounter();
 
-	const swiper2 = new Swiper('.helmet', {
-		slidesPerView: 1,
+    const swiper2 = new Swiper('.helmet', {
+        slidesPerView: 1,
         spaceBetween: 15,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
         pagination: {
-			el: ".swiper-pagination",
-			clickable: true,
-		},
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
 
     for (const dropdown of document.querySelectorAll('.select')) {
@@ -243,17 +243,17 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelector('.burger__list').classList.toggle('open');
     });
 
-	const tabItem = document.querySelectorAll('.tab__item');
-	const tabCont =  document.querySelectorAll('.tab__cont');
+    const tabItem = document.querySelectorAll('.tab__item');
+    const tabCont = document.querySelectorAll('.tab__cont');
 
-	tabItem.forEach((item) => {
-		item.addEventListener('click', function(e) {
-			e.preventDefault();
-			const id = e.target.getAttribute('href').replace('#', '');
-			tabItem.forEach((child) => child.classList.remove('active'));
-			tabCont.forEach((child) => child.classList.remove('active'));
-			item.classList.add('active');
-			document.getElementById(id).classList.add('active')
-		})
-	});
+    tabItem.forEach((item) => {
+        item.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = e.target.getAttribute('href').replace('#', '');
+            tabItem.forEach((child) => child.classList.remove('active'));
+            tabCont.forEach((child) => child.classList.remove('active'));
+            item.classList.add('active');
+            document.getElementById(id).classList.add('active');
+        });
+    });
 });
